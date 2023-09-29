@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
+    "try": "webpack --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "page": "git subtree push --prefix dist origin gh-pages"
   },
@@ -25,6 +26,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "html-webpack-plugin": "^5.5.3"
   }
 }
